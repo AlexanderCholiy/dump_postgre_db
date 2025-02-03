@@ -19,7 +19,7 @@ PG_RESTORE_PATH: str = os.path.join(
 
 def create_database(db_name: str) -> bool:
     try:
-        connection = psycopg2.connect( 
+        connection = psycopg2.connect(
             dbname='postgres',
             user=db_settings.DB_USER,
             password=db_settings.DB_PSWD,
